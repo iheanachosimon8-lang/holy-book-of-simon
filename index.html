@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b62">
+  <meta name="description" content="Holy Book of Simon — read and study the Bible in KJV and World English Bible.">
+  <title>Holy Book of Simon</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">✦</span><span>HOLY BOOK <small>OF SIMON</small></span></a><button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button><nav id="nav"><a href="#read">Read Bible</a><a href="#study">Study tools</a><a href="#saved">My saved verses</a></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">A PLACE FOR THE WORD</p><h1>Let the Word<br><em>guide your day.</em></h1><p>Read, reflect and grow with the Holy Bible in two trusted translations.</p><a class="gold-btn" href="#read">Start reading <span>→</span></a></div><div class="hero-verse"><div class="cross">✝</div><p>“Thy word is a lamp unto my feet, and a light unto my path.”</p><small>PSALM 119:105 · KJV</small></div></section>
+<section class="daily panel"><div><p class="eyebrow">A MOMENT IN THE WORD</p><h2>Verse of the day</h2><p id="dailyText" class="daily-text">“Trust in the LORD with all thine heart; and lean not unto thine own understanding.”</p><b id="dailyRef">Proverbs 3:5 · KJV</b></div><button id="dailySave" class="outline-btn">♡ Save verse</button></section>
+<section id="read" class="reader-section"><div class="section-heading"><p class="eyebrow">YOUR BIBLE, YOUR PACE</p><h2>Read the Bible</h2><p>Choose a translation, book and chapter to begin.</p></div>
+<div class="reader panel"><div class="controls"><label>Translation<select id="version"><option value="kjv">King James Version (KJV)</option><option value="web">World English Bible (WEB)</option></select></label><label>Book<select id="book"></select></label><label>Chapter<select id="chapter"></select></label><button id="loadBtn" class="blue-btn">Open chapter</button></div><div class="search-row"><input id="searchInput" placeholder="Find a passage, e.g. John 3:16"><button id="searchBtn" class="outline-btn">Search passage</button></div><div id="readerOutput" class="reader-output"><div class="welcome"><span>✦</span><h3>Open a chapter to start reading</h3><p>Your next step in the Word begins here.</p></div></div></div>
+</section>
+<section id="study" class="study-grid"><article class="study-card"><span>⌕</span><h3>Find a passage</h3><p>Search by Bible reference, such as Romans 8:28 or Psalm 23.</p><a href="#read">Search the Bible →</a></article><article class="study-card"><span>♡</span><h3>Keep favourite verses</h3><p>Save meaningful verses and return to them whenever you need.</p><a href="#saved">View saved verses →</a></article><article class="study-card"><span>✎</span><h3>Personal reflections</h3><p>Keep private study notes on this device while you read.</p><a href="#saved">Open my space →</a></article></section>
+<section id="saved" class="saved-section"><div class="section-heading"><p class="eyebrow">YOUR PERSONAL SPACE</p><h2>Saved verses & notes</h2><p>Saved on this device. Sign-in and cloud sync can be connected in a later setup step.</p></div><div class="panel"><div id="savedList"><p class="muted">No saved verses yet. Tap “Save verse” on a passage to keep it here.</p></div><label class="notes-label">My study notes<textarea id="notes" rows="4" placeholder="Write a reflection or prayer note..."></textarea></label><button id="saveNotes" class="blue-btn">Save notes on this device</button><span id="noteStatus" class="status"></span></div></section>
+</main>
+<footer><div class="brand footer-brand"><span class="brand-mark">✦</span><span>HOLY BOOK <small>OF SIMON</small></span></div><p>“Study to shew thyself approved unto God.” — 2 Timothy 2:15</p><small>Created and owned by Iheanacho Simon lucky</small></footer>
+<div id="toast" role="status" class="toast"></div><script src="app.js"></script>
+</body></html>
